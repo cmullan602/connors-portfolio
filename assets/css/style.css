@@ -72,23 +72,104 @@ nav ul.social {
     justify-content: center;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+}
 
 h1 {
     font-size: 300%;
     color: black;
     font-family: cursive;
     padding: 10px;
+    position: relative;
 }
-.section {
+
+.about {
     display:flex;
-    border: 20px;
-    border-color: aliceblue;
+    justify-content: center;
+    padding-right: 40px;
+    padding-left: 100px;
 }
 
-.section h2 {
+ h2 {
+    display: flex;
     padding: 10px;
-    margin:auto;
+    font-size: 200%;
+    border-style: none;
+    border-bottom: none;
+    border-top: none;
+    border-right: solid;
+}
+
+.robot {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 40px;
+    padding-left: 100px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+#about-me p {
+    padding: 10px
 }
 
 
+#work {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.tools{
+    max-width: 700px;
+    display:flex;
+    flex-wrap: wrap;
+    
+    
+}
+
+.image {
+    height:200px;
+    width: 200px;
+    background-color: aliceblue;
+    color:aqua;
+    padding:30px;
+    border: solid 3px blue;
+    margin: 20px;
+    
+}
+
+#my-work {
+
+}
+
+.image:hover,
+.image:focus{
+  width:500px;
+  height: 300px;
+}
+
+
+.filled {
+    display: flex;
+}
+ul {
+    margin: 10px;
+    justify-content: flex-end;
+}
+
+li {
+    margin: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
 /* flex Styles /*
