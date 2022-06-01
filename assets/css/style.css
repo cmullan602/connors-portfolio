@@ -53,7 +53,7 @@ nav a:hover{
     background-size: cover;
     background-position:center;
     display: flex;
-    justify-content: center;
+    justify-content:end;
     border-style: ridge;
     border-left: none;
     border-right: none;
@@ -77,25 +77,27 @@ main {
 /* headers */
 
 h1 {
-    font-size: 300%;
+    font-size: 400%;
     color: black;
     font-family: cursive;
     padding: 10px;
-    position: relative
+    max-height: 90px;
 }
 
 h2 {
     display: flex;
     padding: 10px;
     margin-bottom: 5px;
-    font-size: 200%;
+    font-size: 300%;
     border-style: none;
     border-bottom: none;
-    border-top: none;
-    border-right: solid;
+    border-top: solid;
+    border-right: solid 3px;
     min-width: 175px;
     max-width: 150px;
     text-align: right;
+    font-family: cursive;
+    text-emphasis: 9;
 }
 
 
@@ -131,8 +133,12 @@ section {
     background-position: center;
     flex-grow: 1;
     height:300px;
-    border: solid 3px blue;
-    margin: 10px
+    border: solid 3px #1e3142;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 30px;
+    box-shadow: 5px 10px purple;
+    color: black;
 }
 
 /* Sub images Container */
@@ -148,11 +154,21 @@ section {
     height:200px;
     width: 300px;
     padding:30px;
-    border: solid 3px blue;
+    border: solid 3px #1e3142;
+    border-radius: 2px;
     margin: 10px;
+    box-shadow: 5px 10px purple;
+    color: black;
+}
+
+.image-cluster a {
+    align-content: flex-end;
+    color: aqua;
 }
 
 #image-2 {
+    display:flex;
+    align-content: baseline;
     background-image: url("../images/Makenna.jpeg");
     background-size:cover;
     background-position:unset;
@@ -207,19 +223,20 @@ footer {
     text-align: center;
 }
 
+.sub-images a {
+    color: #1e3142;
+}
 
 /* flex Styles */
 
 @media screen and (max-width: 600px) {
  
-//main {
+    main,
+  nav {
     flex-direction: column;
     align-content: center;
-}
+  }
 
-nav {
-  align-content: center;
-}    
 
 nav ul {
     justify-content: space-evenly;
@@ -233,24 +250,23 @@ section {
 
 section ul {
     flex-direction: column;
+    align-content: flex-start;
+}
+
+section li {
+    padding-bottom: 10px;
 }
 
 h2{
 min-width:  300px;
 align-items: center;
 border-style: none;
-border-bottom: solid;
-border-top: none;
+border-bottom: solid 3px;
+border-top: solid;
 border-right: none;
 flex-grow: 1;
 }
 
-main,
-  nav {
-    flex-direction: column;
-  }
-
- p { word-wrap: break-word;
-  overflow-wrap: break-word;
-  hyphens: auto;
- }
+.road {
+    justify-content: center;
+}
