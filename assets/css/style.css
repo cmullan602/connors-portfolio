@@ -9,6 +9,7 @@ header {
     width:100%;
 }
 
+/* Nav Bar */
 nav {
     width: 100%;
     display: flex;
@@ -50,7 +51,7 @@ nav a:hover{
     width: 100%;
     background-image: url("../images/looking-cool.JPG");
     background-size: cover;
-    background-position: center;
+    background-position:center;
     display: flex;
     justify-content: center;
     border-style: ridge;
@@ -98,12 +99,13 @@ h2 {
 }
 
 
-/* About me Section */
+/* Flex Container for About me, My Work and Contact me sections */
 section {
     display:flex;
     padding: 10px;
 }
 
+/* about me flex box and styling*/
 .container {
     display: flex;
     flex-direction: column;
@@ -116,45 +118,76 @@ section {
 
 /* My work Section */
 
-.work {
-    display: flex;
-}
 
 .tools{
     display: flex;
    flex-flow: column;
 }
 
-.sub-images{
-    display: flex;
-    flex-flow: wrap;
-}
 
 .image-1{
+    background-image: url("../images/Seattle.jpeg");
+    background-size: cover;
+    background-position: center;
     flex-grow: 1;
     height:300px;
     border: solid 3px blue;
     margin: 10px
 }
 
-.image-2{
+/* Sub images Container */
+
+.sub-images{
+    display: flex;
+    flex-flow: wrap;
+}
+
+/* Sub images flex direction backgrounds and styling */
+.image-cluster{
     flex-grow: 1;
     height:200px;
     width: 300px;
-    background-color: aliceblue;
-    color:aqua;
     padding:30px;
     border: solid 3px blue;
     margin: 10px;
 }
 
+#image-2 {
+    background-image: url("../images/Makenna.jpeg");
+    background-size:cover;
+    background-position:unset;
+}
 
-.image-1:hover {
-        animation:
-        animation-timing-function: ease;
+#image-3 {
+    background-image: url("../images/ringo-me.jpeg");
+    background-size:cover;
+    background-position:center;
+}
+
+#image-4 {
+    background-image: url("../images/amanda.jpeg");
+    background-size:cover;
+    background-position:center;
+}
+
+#image-5 {
+    background-image: url("../images/sunset.jpeg");
+    background-size:cover;
+    background-position:center;
 }
 
 
+/*image hover effects*/
+.image-1:hover {
+    border-color: rgb(181, 181, 110);
+    opacity: .5;
+}
+.image-cluster:hover {
+        border-color: rgb(181, 181, 110);
+        opacity: .5;
+}
+
+/*Contact me Section styling */
 section ul {
     padding: 10px;
     width: 100%;
@@ -166,13 +199,14 @@ section a {
     padding: 2px;
 }
 
-
+/*Footer Styling*/
 footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
+
 
 /* flex Styles */
 
@@ -202,7 +236,7 @@ section ul {
 }
 
 h2{
-min-width:  380px;
+min-width:  300px;
 align-items: center;
 border-style: none;
 border-bottom: solid;
