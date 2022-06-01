@@ -7,32 +7,32 @@ body {
 
 header {
     width:100%;
-    background: #13293d;
-    padding: 10px;
 }
 
 nav {
     width: 100%;
-   display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 nav ul {
-    display:flex;
-    min-width: 200px;
+    display: flex;
+    margin: 2px;
 }
 
 nav li {
-    min-width: 20px;
+    display: flex;
 }
 
 nav a {
     color: azure;
-    text-decoration: none;
     text-align: center;
     display: block;
     padding: 10px;
-    min-width: 115px;
-    border-style: solid;
+    border: white;
+    border-style:initial;
+    border-radius: 5px;
 }
 
 
@@ -42,74 +42,66 @@ nav a:hover{
 
 /* Social media menu styles */
 
-//#insta {
-    background: url("../images/insta.jpeg") no-repeat center;
-    background-size: 50%;
-}
-
-//#tw {
-    background: url("../images/twitter.png") no-repeat center;
-    background-size: 50%;
-}
-
-.social{
-}
-
-nav ul.social {
-    flex: 1 1 0;
-}
 
 /* Main Background Image */
 
 .road {
-    height: 400px;
+    height: 300px;
     width: 100%;
-    margin-bottom: 25px;
     background-image: url("../images/looking-cool.JPG");
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: center;
+    border-style: ridge;
+    border-left: none;
+    border-right: none;
 }
 
+/* Main Flexbox container*/
+
 main {
+    background: rgb(215, 240, 243);
+    color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    padding: 20px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 10%;
+    padding-right: 5%;
 }
+
+/* headers */
 
 h1 {
     font-size: 300%;
     color: black;
     font-family: cursive;
     padding: 10px;
-    position: relative;
+    position: relative
 }
 
-.about {
-    display:flex;
-    justify-content: center;
-    padding-right: 40px;
-    padding-left: 100px;
-}
-
- h2 {
+h2 {
     display: flex;
     padding: 10px;
+    margin-bottom: 5px;
     font-size: 200%;
     border-style: none;
     border-bottom: none;
     border-top: none;
     border-right: solid;
+    min-width: 175px;
+    max-width: 150px;
+    text-align: right;
 }
 
-.robot {
-    display: flex;
-    justify-content: space-between;
-    padding-right: 40px;
-    padding-left: 100px;
+
+/* About me Section */
+section {
+    display:flex;
+    padding: 10px;
 }
 
 .container {
@@ -118,58 +110,113 @@ h1 {
 }
 
 #about-me p {
-    padding: 10px
-}
-
-
-#work {
     display: flex;
-    justify-content: space-between;
+    padding: 10px;
 }
 
+/* My work Section */
 
+.work {
+    display: flex;
+}
 
 .tools{
-    max-width: 700px;
-    display:flex;
-    flex-wrap: wrap;
-    
-    
+    display: flex;
+   flex-flow: column;
 }
 
-.image {
+.sub-images{
+    display: flex;
+    flex-flow: wrap;
+}
+
+.image-1{
+    flex-grow: 1;
+    height:300px;
+    border: solid 3px blue;
+    margin: 10px
+}
+
+.image-2{
+    flex-grow: 1;
     height:200px;
-    width: 200px;
+    width: 300px;
     background-color: aliceblue;
     color:aqua;
     padding:30px;
     border: solid 3px blue;
-    margin: 20px;
-    
-}
-
-#my-work {
-
-}
-
-.image:hover,
-.image:focus{
-  width:500px;
-  height: 300px;
-}
-
-
-.filled {
-    display: flex;
-}
-ul {
     margin: 10px;
-    justify-content: flex-end;
 }
 
-li {
-    margin: 20px;
-    display: flex;
-    justify-content: flex-end;
+
+.image-1:hover {
+        animation:
+        animation-timing-function: ease;
 }
-/* flex Styles /*
+
+
+section ul {
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+section a {
+    padding: 2px;
+}
+
+
+footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+/* flex Styles */
+
+@media screen and (max-width: 600px) {
+ 
+//main {
+    flex-direction: column;
+    align-content: center;
+}
+
+nav {
+  align-content: center;
+}    
+
+nav ul {
+    justify-content: space-evenly;
+ 
+}
+
+section {
+    flex-direction: column;
+    align-content: center;
+}
+
+section ul {
+    flex-direction: column;
+}
+
+h2{
+min-width:  380px;
+align-items: center;
+border-style: none;
+border-bottom: solid;
+border-top: none;
+border-right: none;
+flex-grow: 1;
+}
+
+main,
+  nav {
+    flex-direction: column;
+  }
+
+ p { word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+ }
