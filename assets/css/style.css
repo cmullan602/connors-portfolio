@@ -1,5 +1,5 @@
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     margin: 0;
     background: #1e3142;
     color: white;
@@ -10,6 +10,7 @@ header {
 }
 
 /* Nav Bar */
+
 nav {
     width: 100%;
     display: flex;
@@ -29,11 +30,7 @@ nav li {
 nav a {
     color: azure;
     text-align: center;
-    display: block;
     padding: 10px;
-    border: white;
-    border-style:initial;
-    border-radius: 5px;
 }
 
 
@@ -82,32 +79,33 @@ h1 {
     font-family: cursive;
     padding: 10px;
     max-height: 90px;
+    text-shadow: 2px 2px lightslategray;
 }
 
 h2 {
     display: flex;
     padding: 5px;
-    margin-bottom: 5px;
     font-size: 200%;
-    border-style: none;
-    border-bottom: none;
-    border-top: solid;
-    border-right: solid 3px;
+    border-top: solid 1px black;
+    border-right: solid 3px black;
     min-width: 175px;
     max-width: 150px;
-    text-align: right;
+    text-align: center;
     font-family: cursive;
     text-emphasis: 9;
+    text-shadow: 1px 1px lightslategray;
 }
 
 
 /* Flex Container for About me, My Work and Contact me sections */
+
 section {
     display:flex;
     padding: 10px;
 }
 
 /* about me flex box and styling*/
+
 .container {
     display: flex;
     flex-direction: column;
@@ -149,6 +147,7 @@ section {
 }
 
 /* Sub images flex direction backgrounds and styling */
+
 .image-cluster{
     flex-grow: 1;
     height:200px;
@@ -194,6 +193,7 @@ section {
 
 
 /*image hover effects*/
+
 .image-1:hover {
     border-color: rgb(181, 181, 110);
     opacity: .5;
@@ -204,6 +204,7 @@ section {
 }
 
 /*Contact me Section styling */
+
 section ul {
     padding: 10px;
     width: 100%;
@@ -216,6 +217,7 @@ section a {
 }
 
 /*Footer Styling*/
+
 footer {
     padding: 30px;
     clear: both;
@@ -231,6 +233,9 @@ footer {
 
 @media screen and (max-width: 600px) {
  
+h1 {
+    font-size: 300%;
+}
     main,
   nav {
     flex-direction: column;
@@ -257,7 +262,7 @@ section li {
     padding-bottom: 10px;
 }
 
-h2{
+h2 {
 min-width:  300px;
 align-items: center;
 border-style: none;
