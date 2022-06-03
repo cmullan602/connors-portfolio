@@ -135,8 +135,8 @@ section {
     border-radius: 5px;
     margin: 10px;
     padding: 30px;
-    box-shadow: 5px 10px purple;
-    color: black;
+    box-shadow: 5px 5px rgb(72, 36, 181);
+    color: white;
 }
 
 /* Sub images Container */
@@ -154,9 +154,9 @@ section {
     width: 300px;
     padding:30px;
     border: solid 3px #1e3142;
-    border-radius: 2px;
+    border-radius: 5px;
     margin: 10px;
-    box-shadow: 5px 10px purple;
+    box-shadow: 5px 5px rgb(72, 36, 181);
     color: black;
 }
 
@@ -212,9 +212,6 @@ section ul {
     align-items: center;
     justify-content: space-evenly;
 }
-section a {
-    padding: 2px;
-}
 
 /*Footer Styling*/
 
@@ -226,7 +223,7 @@ footer {
 }
 
 .sub-images a {
-    color: #1e3142;
+    color: white;
 }
 
 /* flex Styles */
