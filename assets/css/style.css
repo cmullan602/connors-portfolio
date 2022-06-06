@@ -33,12 +33,13 @@ nav a {
     padding: 10px;
 }
 
+/* Nav Hover Effect  */
 
 nav a:hover{
     background-color: antiquewhite;
 }
 
-/* Social media menu styles */
+
 
 
 /* Main Background Image */
@@ -83,7 +84,7 @@ h1 {
 }
 
 h2 {
-    display: flex;
+    display: inline-block;
     padding: 5px;
     font-size: 200%;
     border-top: solid 1px black;
@@ -157,17 +158,11 @@ section {
     border-radius: 5px;
     margin: 10px;
     box-shadow: 5px 5px rgb(72, 36, 181);
-    color: black;
+    color: white
 }
 
-.image-cluster a {
-    align-content: flex-end;
-    color: aqua;
-}
 
 #image-2 {
-    display:flex;
-    align-content: baseline;
     background-image: url("../images/Makenna.jpeg");
     background-size:cover;
     background-position:unset;
@@ -222,9 +217,7 @@ footer {
     text-align: center;
 }
 
-.sub-images a {
-    color: white;
-}
+
 
 /* flex Styles */
 
@@ -271,4 +264,5 @@ flex-grow: 1;
 
 .road {
     justify-content: center;
+}
 }
