@@ -224,6 +224,7 @@ footer {
  
 h1 {
     font-size: 300%;
+    width: 100%;
 }
     main,
   nav {
@@ -263,5 +264,9 @@ flex-grow: 1;
 
 .road {
     justify-content: center;
+}
+
+.image-1 {
+    height: 200px;
 }
 }
